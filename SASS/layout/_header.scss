@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+header { 
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        margin-top: 5px;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        position: relative;
+        top: 1px;
+        z-index: 2;   
+    }
+
+    img {
+        max-height: 36px;
+        max-width: 197px;
+    }
+
+    .header-location {
+        display: flex;
+        justify-content: center;
+        background-color: #EAEAEA;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+
+        .fa-location-dot {
+            padding-right: 5px;
+        }
+
+    }
+
+}
+
+.mp-header {
+   @include mixins.menu-header;
+}

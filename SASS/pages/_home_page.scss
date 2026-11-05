@@ -1,0 +1,77 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: variables.$bg-color;
+    padding-bottom: 50px;
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        padding: 30px 50px 0 50px;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.fonction-section {
+    padding-bottom: 40px;
+
+    h2 {
+        font-size: 24px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .menu-card {
+        @include mixins.menu-card;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        background-color: #F6F6F6;
+    
+        p {
+            padding-left: 10px;
+        }
+    }
+    
+    .card-icon {
+        @include mixins.card-icon;  
+    }
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: variables.$bg-color;
+    padding-bottom: 45px;
+
+    h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 20px;
+    }
+
+    .restaurant-card {
+        @include mixins.hp-restaurant-card;
+        @include mixins.heart-button;
+        
+        .restaurant-title {
+        @include mixins.hp-restaurant-title;
+        }    
+
+        img {
+            @include mixins.hp-restaurant-img;
+        }
+    }
+}
