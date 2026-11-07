@@ -192,6 +192,7 @@ footer ul a .svg-inline--fa {
   border: solid 1px;
   border: none;
   border-radius: 22px;
+  line-height: 22px;
 }
 
 .restaurant-list {
@@ -220,22 +221,31 @@ footer ul a .svg-inline--fa {
 .restaurant-list .restaurant-card a {
   text-decoration: none;
 }
-.restaurant-list .restaurant-card .like-checkbox {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  border: 0;
+.restaurant-list .restaurant-card .like-button {
+  cursor: pointer;
+  display: block;
+}
+.restaurant-list .restaurant-card .like-button .checked-heart {
+  display: none;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.restaurant-list .restaurant-card .like-button input:checked ~ .checked-heart {
+  display: inline;
+}
+.restaurant-list .restaurant-card .like-button input:checked ~ .unchecked-heart {
+  display: none;
+}
+.restaurant-list .restaurant-card .like-button input {
+  display: none;
 }
 .restaurant-list .restaurant-card .like-button {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 32px;
-  height: 32px;
-  color: black;
+  bottom: 32px;
+  right: 32px;
   font-size: 22px;
-  cursor: pointer;
 }
 .restaurant-list .restaurant-card .restaurant-title {
   color: black;
@@ -276,28 +286,37 @@ footer ul a .svg-inline--fa {
   border-radius: 40px 40px 0 0;
   z-index: 1;
 }
-.menu-section .like-checkbox {
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  border: 0;
-}
-.menu-section .like-button {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  width: 32px;
-  height: 32px;
-  color: black;
-  font-size: 22px;
-  cursor: pointer;
-}
 .menu-section h1 {
   font-family: "Shrikhand";
   font-size: 28px;
   padding: 15px;
   margin: auto;
+}
+.menu-section .restaurant-name .like-button {
+  cursor: pointer;
+  display: block;
+}
+.menu-section .restaurant-name .like-button .checked-heart {
+  display: none;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.menu-section .restaurant-name .like-button input:checked ~ .checked-heart {
+  display: inline;
+}
+.menu-section .restaurant-name .like-button input:checked ~ .unchecked-heart {
+  display: none;
+}
+.menu-section .restaurant-name .like-button input {
+  display: none;
+}
+.menu-section .restaurant-name .like-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  font-size: 22px;
 }
 
 .menu-group {

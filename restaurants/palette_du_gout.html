@@ -24,9 +24,16 @@
             <div class="bg-menu">
             <img src="/images/restaurants/palette_du_gout.jpg" alt="Image du restaurant la Palette du Goût">
             </div>
-                <section class="menu-section">                
-                <h1>La palette du goût</h1>
-                <i class="fa-regular fa-heart"></i>
+                <section class="menu-section">
+                    <div class="restaurant-name">                
+                        <h1>La palette du goût</h1>
+                        <label for="like-palette" class="like-button" aria-hidden="true">
+                        <input type="checkbox" id="like-palette" class="like-checkbox"
+                            aria-label="Ajouter le restaurant aux favoris">
+                        <i class="unchecked-heart fa-regular fa-heart"></i>
+                        <i class="checked-heart fa-solid fa-heart"></i>
+                        </label>
+                    </div>
                     <div class="menu-group">
                         <h2>ENTRÉES</h2>
                             <button class="menu-card">

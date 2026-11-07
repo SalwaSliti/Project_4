@@ -53,6 +53,7 @@
     border: solid 1px;
     border: none;
     border-radius: 22px;
+    line-height: 22px;
 }
 
 @mixin menu-card {
@@ -116,24 +117,31 @@
 }
 
 @mixin heart-button {
-    .like-checkbox {        
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        border: 0;
-    }
 
     .like-button {
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        width: 32px;
-        height: 32px;
-        color: black;
-        font-size: 22px;
         cursor: pointer;
+        display: block;
+        
 
+        .checked-heart {
+            display: none;
+            background: variables.$like-button;
+            background-clip: text;
+            color: transparent;
+            
+        }
+
+        input:checked ~ .checked-heart {
+            display: inline;
+        }
+
+        input:checked ~ .unchecked-heart {
+            display: none;
+        }
+    }
+    
+    .like-button input {
+        display: none;
     }
 }
 

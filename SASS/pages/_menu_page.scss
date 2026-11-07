@@ -14,13 +14,23 @@
 
 .menu-section {
     @include mixins.background-menu;
-    @include mixins.heart-button;
 
     h1 {
         font-family: font.$font-title;
         font-size: 28px;
         padding: 15px;
         margin: auto;
+    }
+
+    .restaurant-name {        
+        @include mixins.heart-button;
+        
+        .like-button {            
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            font-size: 22px;
+        }
     }
 }
 
