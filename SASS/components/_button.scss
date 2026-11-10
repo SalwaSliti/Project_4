@@ -1,7 +1,6 @@
 @use "../abstracts/mixins";
 
-.btn-gradient {
-    @include mixins.btn;
-    align-self: center;
-    text-decoration: none;
+.btn {
+    @include mixins.btn-gradient;
+   
 }
