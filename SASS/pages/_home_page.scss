@@ -21,6 +21,13 @@
         margin-bottom: 20px;
     }
 
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 50%;
+    }
+
 }
 
 .fonction-section {
@@ -78,8 +85,12 @@
         }    
 
         img {
-            @include mixins.hp-restaurant-img;
-        }
+            @include mixins.hp-restaurant-img;          
+        }  
+
+        .note-enchantee {
+                object-position: 0 60%;
+            }
 
         .new-icon {
             @include mixins.nouveau;

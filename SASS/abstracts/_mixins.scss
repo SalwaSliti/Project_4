@@ -127,6 +127,7 @@
     height: 174px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+    object-position: 0 90%;
 }
 
 @mixin heart-button {
@@ -202,15 +203,9 @@
             display: inline-block;
             padding-right: 5px;
             
-        }       
-
-       
-    }
-
-   
+        }        
+    }   
  }
-
-
 
  @mixin underline-title {
     display: inline-block;
@@ -228,15 +223,26 @@
         }
  }
 
-
 @mixin btn-gradient {
+    cursor: pointer;
     color: white;
     font-size: 16px;
+    text-decoration: none;
     background: variables.$btn-color;
     box-shadow: 0px 4px 10px 0px #00000040;
     border: none;
     border-radius: 25px;
     padding: 15px 20px 15px 20px;
     margin: 10px;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+    
+        &:hover {
+                opacity: 0,9;
+                background: variables.$btn-color-hover;
+                box-shadow: 0px 4px 15px 0px #00000059;
+            }
+        
+    
     
 }
