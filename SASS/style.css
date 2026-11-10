@@ -256,6 +256,19 @@ footer ul a .svg-inline--fa {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.restaurant-list .restaurant-card .new-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #008766;
+  background-color: #99E2D0;
+  border: solid 1px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 10px;
+}
 
 /*Mixins*/
 /*Styles globaux*/

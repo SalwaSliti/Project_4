@@ -91,7 +91,21 @@
         text-decoration: none;
     }
 
-} 
+}
+
+@mixin nouveau {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: variables.$new-color;
+    background-color: variables.$third-color;
+    border: solid 1px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 7px 10px;
+}
 
 @mixin hp-restaurant-title {    
     color: black;
