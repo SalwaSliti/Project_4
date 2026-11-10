@@ -31,7 +31,7 @@ body .main-container {
   padding: 15px 20px 15px 20px;
   margin: 10px;
   opacity: 1;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease;
 }
 .btn:hover {
   opacity: 0, 9;
@@ -41,6 +41,80 @@ body .main-container {
 
 /*Mixins*/
 /*Styles globaux*/
+.menu-group {
+  margin: 15px;
+}
+.menu-group h2 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 3px;
+}
+.menu-group h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  margin-top: 2px;
+  background-color: #99E2D0;
+}
+.menu-group .menu-card {
+  position: relative;
+  width: 100%;
+  border: solid 1px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.menu-group .menu-card .menu-card-text h3,
+.menu-group .menu-card .menu-card-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-group .menu-card .menu-card-text h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.menu-group .menu-card .menu-card-text p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+  display: block;
+}
+.menu-group .menu-card .menu-price {
+  color: #353535;
+  font-size: 15px;
+  font-weight: 600;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.menu-group .menu-card .menu-price .price {
+  display: inline-block;
+  padding-right: 5px;
+}
+.menu-group .menu-card .menu-price {
+  display: flex;
+}
+.menu-group .menu-card .menu-price .fa-regular {
+  position: absolute;
+  color: #99E2D0;
+  font-size: 20px;
+  z-index: 1;
+}
+.menu-group .menu-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  text-align: left;
+  white-space: nowrap;
+  overflow: ellipsis;
+}
+
 /*Layouts*/
 /*Mixins*/
 header .logo {
@@ -120,8 +194,13 @@ footer ul a {
   text-decoration: none;
   color: white;
 }
-footer ul a .svg-inline--fa {
+footer ul a .fa-utensils {
+  font-size: 14px;
+  padding-right: 12px;
+}
+footer ul a .fa-handshake-angle {
   padding-right: 10px;
+  font-size: 11px;
 }
 
 /*Pages*/
@@ -341,68 +420,4 @@ footer ul a .svg-inline--fa {
   top: 32px;
   right: 32px;
   font-size: 22px;
-}
-
-.menu-group {
-  margin: 15px;
-}
-.menu-group h2 {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: normal;
-  padding: 3px;
-}
-.menu-group h2::after {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 3px;
-  margin-top: 2px;
-  background-color: #99E2D0;
-}
-.menu-group .menu-card {
-  position: relative;
-  width: 100%;
-  border: solid 1px;
-  border: none;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  border-radius: 20px;
-}
-.menu-group .menu-card .menu-card-text h3,
-.menu-group .menu-card .menu-card-text p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu-group .menu-card .menu-card-text h3 {
-  font-size: 18px;
-  margin: 0;
-}
-.menu-group .menu-card .menu-card-text p {
-  font-size: 15px;
-  margin: 0;
-  line-height: 1.5;
-  display: block;
-}
-.menu-group .menu-card .menu-price {
-  color: #353535;
-  font-size: 15px;
-  font-weight: 600;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-.menu-group .menu-card .menu-price .price {
-  display: inline-block;
-  padding-right: 5px;
-}
-.menu-group .menu-card {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-end;
-  text-align: left;
-  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */

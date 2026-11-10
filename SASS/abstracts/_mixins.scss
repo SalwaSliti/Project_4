@@ -223,6 +223,20 @@
         }
  }
 
+ @mixin anim-menu-card {
+
+    .menu-price {
+        display: flex;
+        
+        .fa-regular {
+            position: absolute;
+            color: variables.$third-color;
+            font-size: 20px;
+            z-index: 1;
+        }
+    }
+ }
+
 @mixin btn-gradient {
     cursor: pointer;
     color: white;
@@ -235,7 +249,7 @@
     padding: 15px 20px 15px 20px;
     margin: 10px;
     opacity: 1;
-    transition: opacity 0.8s ease;
+    transition: opacity 0.5s ease;
     
         &:hover {
                 opacity: 0,9;

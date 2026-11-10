@@ -3,4 +3,25 @@
 @use "../base/font";
 
 
+.menu-group {
+    margin: 15px;
+
+    h2 {
+        @include mixins.underline-title;
+    }
+
+    .menu-card {
+        @include mixins.mp-restaurant-card;
+        @include mixins.anim-menu-card;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+        text-align: left;        
+        white-space: nowrap;
+        overflow: ellipsis;
+
+    }
+}
 
