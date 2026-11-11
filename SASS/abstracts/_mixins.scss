@@ -170,12 +170,13 @@
     font-size: 16px;
     border-radius: 20px;
 
-      .menu-card-text {      
+      .menu-card-text {
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
 
         h3,
         p {
-            overflow: hidden;
-            text-overflow: ellipsis;
             white-space: nowrap;
         }
 
@@ -196,13 +197,11 @@
         color: variables.$footer-color;
         font-size: 15px;
         font-weight: 600;
-        flex-shrink: 0;
-        white-space: nowrap;
+        flex-shrink: 0;    
 
         .price {
             display: inline-block;
-            padding-right: 5px;
-            
+            padding-left: 10px;         
         }        
     }   
  }
@@ -223,19 +222,70 @@
         }
  }
 
- @mixin anim-menu-card {
+ @mixin anim-menu-group {
 
-    .menu-price {
-        display: flex;
-        
-        .fa-regular {
-            position: absolute;
-            color: variables.$third-color;
-            font-size: 20px;
-            z-index: 1;
-        }
-    }
  }
+
+ @mixin anim-menu-card {
+/*checkbox*/
+        position: relative;
+        overflow: hidden;        
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: variables.$third-color;
+            width: 60px;
+            transform: translateX(60px);
+            transition: transform 0.2s ease;           
+        }
+        
+        .menu-price {
+            .fa-solid {
+                transform: translateX(60px);
+                transition: transform 0.2s ease;
+            } 
+            
+            .price {
+                transform: translateX(0);
+                transition: transform 0.2s ease;
+            }
+        }
+
+        .menu-card-btn input {
+            display: none;
+        }
+
+        &:has(.menu-checkbox:checked) {
+            &::after {
+                transform: translateX(0);
+        }
+
+        .menu-price .fa-solid {
+            transform: translateX(0);
+        }
+
+        .menu-price .price {
+            transform: translateX(-60px);
+        }
+
+        .menu-card-text{
+            margin-right: 60px;
+            transition: margin-right 0.2s ease;
+
+            h3,
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }       
+    }
+}
+    
 
 @mixin btn-gradient {
     cursor: pointer;

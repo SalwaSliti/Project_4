@@ -69,10 +69,13 @@ body .main-container {
   font-size: 16px;
   border-radius: 20px;
 }
+.menu-group .menu-card .menu-card-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
 .menu-group .menu-card .menu-card-text h3,
 .menu-group .menu-card .menu-card-text p {
-  overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 .menu-group .menu-card .menu-card-text h3 {
@@ -90,29 +93,78 @@ body .main-container {
   font-size: 15px;
   font-weight: 600;
   flex-shrink: 0;
-  white-space: nowrap;
 }
 .menu-group .menu-card .menu-price .price {
   display: inline-block;
-  padding-right: 5px;
-}
-.menu-group .menu-card .menu-price {
-  display: flex;
-}
-.menu-group .menu-card .menu-price .fa-regular {
-  position: absolute;
-  color: #99E2D0;
-  font-size: 20px;
-  z-index: 1;
+  padding-left: 10px;
 }
 .menu-group .menu-card {
+  /*checkbox*/
+  position: relative;
+  overflow: hidden;
+}
+.menu-group .menu-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #99E2D0;
+  width: 60px;
+  transform: translateX(60px);
+  transition: transform 0.2s ease;
+}
+.menu-group .menu-card .menu-price .fa-solid {
+  transform: translateX(60px);
+  transition: transform 0.2s ease;
+}
+.menu-group .menu-card .menu-price .price {
+  transform: translateX(0);
+  transition: transform 0.2s ease;
+}
+.menu-group .menu-card .menu-card-btn input {
+  display: none;
+}
+.menu-group .menu-card:has(.menu-checkbox:checked)::after {
+  transform: translateX(0);
+}
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-price .fa-solid {
+  transform: translateX(0);
+}
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-price .price {
+  transform: translateX(-60px);
+}
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text {
+  margin-right: 60px;
+  transition: margin-right 0.2s ease;
+}
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text h3,
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-group .menu-card {
+  width: 95%;
+}
+.menu-group .menu-card .menu-price .fa-solid {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.menu-card-btn {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: flex-end;
   text-align: left;
-  white-space: nowrap;
-  overflow: ellipsis;
 }
 
 /*Layouts*/

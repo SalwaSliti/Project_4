@@ -4,6 +4,7 @@
 
 
 .menu-group {
+    @include mixins.anim-menu-group;
     margin: 15px;
 
     h2 {
@@ -13,15 +14,30 @@
     .menu-card {
         @include mixins.mp-restaurant-card;
         @include mixins.anim-menu-card;
+        width: 95%;
 
+        .menu-price {
+
+            .fa-solid {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-size: 20px;
+            z-index: 2;
+            }
+        }
+    }
+}
+
+ .menu-card-btn {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: flex-end;
         text-align: left;        
-        white-space: nowrap;
-        overflow: ellipsis;
-
+      
     }
-}
-
