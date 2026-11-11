@@ -41,8 +41,25 @@ body .main-container {
 
 /*Mixins*/
 /*Styles globaux*/
+@keyframes anim-menu-group {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .menu-group {
   margin: 15px;
+}
+.menu-group .menu-animation-1 {
+  animation: anim-menu-group 1000ms;
+}
+.menu-group .menu-animation-2 {
+  animation: anim-menu-group 2000ms;
+}
+.menu-group .menu-animation-3 {
+  animation: anim-menu-group 3000ms;
 }
 .menu-group h2 {
   display: inline-block;

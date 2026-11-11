@@ -1,11 +1,23 @@
 @use "../abstracts/variables";
 @use "../abstracts/mixins";
 @use "../base/font";
-
+@use "../abstracts/keyframes";
 
 .menu-group {
-    @include mixins.anim-menu-group;
     margin: 15px;
+
+    .menu-animation-1 {
+        animation: anim-menu-group 1000ms;    
+    }
+
+    .menu-animation-2 {
+        animation: anim-menu-group 2000ms;
+    }
+
+    .menu-animation-3 {
+        animation: anim-menu-group 3000ms;
+        
+    }
 
     h2 {
         @include mixins.underline-title;
