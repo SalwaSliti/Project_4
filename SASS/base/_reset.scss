@@ -1,8 +1,11 @@
+@use "../abstracts/variables";
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    background-color: variables.$bg-color;
 
     .main-container {
     width: 100%;

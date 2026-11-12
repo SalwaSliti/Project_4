@@ -1,6 +1,14 @@
 @use "../abstracts/mixins";
 
+.btn-hp {
+    @include mixins.btn-gradient;
+    align-self: center;
+}
+
+
 .btn {
     @include mixins.btn-gradient;
-   
+    display: block;
+    margin: auto;
+    padding: 15px 60px;
 }

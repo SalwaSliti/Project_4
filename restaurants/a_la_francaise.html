@@ -26,8 +26,15 @@
             <img src="/images/restaurants/a_la_francaise.jpg" alt="Image du restaurant À la française">
         </div>
             <section class="menu-section">
-                <h1>À la française</h1>
-                <i class="fa-regular fa-heart"></i>
+                <div class="restaurant-name">
+                    <h1>À la française</h1>
+                    <label for="like-francaise" class="like-button">
+                        <input type="checkbox" id="like-francaise" class="like-checkbox"
+                            aria-label="Ajouter À la française aux favoris">
+                        <i class="unchecked-heart fa-regular fa-heart"></i>
+                        <i class="checked-heart fa-solid fa-heart"></i>
+                    </label>
+                </div>
                     <div class="menu-group">
                         <h2 class="menu-title">ENTRÉES</h2>
                             <div class="menu-card">
@@ -164,7 +171,7 @@
             <h3>ohmyfood</h3>
                 <ul>
                    <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="fa-solid fa-handshake"></i>Devenir partenaire</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
                     <li><a href="#"><i></i>Mentions légales</a></li>
                     <li><a href="#"><i></i>Contact</a></li>
                 </ul>
