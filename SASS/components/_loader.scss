@@ -1,0 +1,48 @@
+@use "../abstracts/keyframes";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/font";
+
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  animation: loader-opacity 1s linear;
+  animation-duration: 0.4s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+
+  .loader-content {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+    border: 10px solid transparent;
+    border-radius: 100px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: -10px;      
+        border: 10px solid transparent;
+        border-radius: 100px;
+        border-top-color: variables.$primary-color;
+        animation: loader-spin 1.6s linear infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 12px;      
+        border: 10px solid transparent;
+        border-radius: 100px;
+        border-top-color: variables.$secondary-color;
+        animation: loader-spin 1.3s linear infinite reverse;
+    }
+  }
+}
