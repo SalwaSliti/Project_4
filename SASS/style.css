@@ -91,6 +91,11 @@ body .main-container {
   margin: auto;
   padding: 15px 60px;
 }
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 30px;
+  }
+}
 
 /*Mixins*/
 /*Styles globaux*/
@@ -122,6 +127,12 @@ body .main-container {
 }
 .menu-group {
   margin: 15px;
+}
+@media (min-width: 768px) {
+  .menu-group {
+    margin: auto;
+    width: 55%;
+  }
 }
 .menu-group .menu-animation-1 {
   animation: anim-menu-group 1000ms;
@@ -305,6 +316,12 @@ header .header-location .fa-location-dot {
   padding: 10px 85px 10px 20px;
   background-color: #fff;
 }
+@media (min-width: 768px) {
+  .mp-header {
+    position: relative;
+    padding: 30px;
+  }
+}
 .mp-header .back-button {
   text-decoration: none;
   color: #353535;
@@ -321,6 +338,12 @@ header .header-location .fa-location-dot {
 .mp-header img {
   max-height: 36px;
   max-width: 197px;
+}
+@media (min-width: 768px) {
+  .mp-header img {
+    position: absolute;
+    left: 47%;
+  }
 }
 
 /*Mixins*/
@@ -677,6 +700,13 @@ footer ul a .fa-handshake-angle {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 768px) {
+  .bg-menu img {
+    height: 500px;
+    -o-object-position: 0 60%;
+       object-position: 0 60%;
+  }
+}
 
 .menu-section {
   position: relative;
@@ -688,11 +718,26 @@ footer ul a .fa-handshake-angle {
   border: none;
   border-radius: 40px 40px 0 0;
 }
+@media (min-width: 768px) {
+  .menu-section {
+    max-width: 1440px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -43px;
+  }
+}
 .menu-section h1 {
   font-family: "Shrikhand";
   font-size: 28px;
   padding: 15px;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .menu-section h1 {
+    display: flex;
+    justify-content: center;
+  }
 }
 .menu-section .restaurant-name .like-button {
   cursor: pointer;
@@ -714,9 +759,17 @@ footer ul a .fa-handshake-angle {
 .menu-section .restaurant-name .like-button input {
   display: none;
 }
+.menu-section .restaurant-name {
+  position: relative;
+}
 .menu-section .restaurant-name .like-button {
   position: absolute;
-  top: 32px;
+  top: 22px;
   right: 32px;
   font-size: 22px;
+}
+@media (min-width: 768px) {
+  .menu-section .restaurant-name .like-button {
+    right: 420px;
+  }
 }/*# sourceMappingURL=style.css.map */
