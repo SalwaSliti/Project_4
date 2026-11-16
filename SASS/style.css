@@ -105,9 +105,11 @@ body .main-container {
 @keyframes loader-opacity {
   from {
     opacity: 1;
+    pointer-events: none;
   }
   to {
     opacity: 0;
+    pointer-events: none;
   }
 }
 @keyframes loader-spin {
@@ -161,19 +163,18 @@ body .main-container {
   min-width: 0;
   overflow: hidden;
 }
-.menu-group .menu-card .menu-card-text h3,
-.menu-group .menu-card .menu-card-text p {
-  white-space: nowrap;
-}
-.menu-group .menu-card .menu-card-text h3 {
+.menu-group .menu-card .menu-card-text .dish-name {
+  display: block;
   font-size: 18px;
   margin: 0;
+  font-weight: 500;
 }
-.menu-group .menu-card .menu-card-text p {
+.menu-group .menu-card .menu-card-text .dish-description {
   font-size: 15px;
   margin: 0;
-  line-height: 1.5;
+  line-height: 2;
   display: block;
+  font-weight: 350;
 }
 .menu-group .menu-card .menu-price {
   color: #353535;
@@ -208,6 +209,7 @@ body .main-container {
 .menu-group .menu-card .menu-price .price {
   transform: translateX(0);
   transition: transform 0.2s ease;
+  padding-bottom: 5px;
 }
 .menu-group .menu-card .menu-card-btn input {
   display: none;
@@ -225,8 +227,8 @@ body .main-container {
   margin-right: 60px;
   transition: margin-right 0.2s ease;
 }
-.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text h3,
-.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text p {
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text .dish-name,
+.menu-group .menu-card:has(.menu-checkbox:checked) .menu-card-text .dish-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -332,6 +334,7 @@ footer ul {
 footer ul a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 footer ul a .fa-utensils {
   font-size: 14px;

@@ -183,21 +183,19 @@
         min-width: 0;
         overflow: hidden;
 
-        h3,
-        p {
-            white-space: nowrap;
-        }
-
-        h3 {
+        .dish-name {
+            display: block;
             font-size: 18px;
             margin: 0;
+            font-weight: 500;
         }
 
-        p {
+        .dish-description {
             font-size: 15px;
             margin: 0;
-            line-height: 1.5;
+            line-height: 2;
             display: block;
+            font-weight: 350;
         }
 
 
@@ -259,6 +257,7 @@
             .price {
                 transform: translateX(0);
                 transition: transform 0.2s ease;
+                padding-bottom: 5px;
             }
         }
 
@@ -283,8 +282,8 @@
             margin-right: 60px;
             transition: margin-right 0.2s ease;
 
-            h3,
-            p {
+            .dish-name,
+            .dish-description {
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
