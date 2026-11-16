@@ -8,12 +8,24 @@ footer {
     background-color: variables.$footer-color;
     color: white;
 
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        gap: 50px;
+    }
+
     h3 {
         font-family: font.$font-title;
         font-size: 18px;
         font-weight: 500;
         padding: 20px 0 0 30px;
         margin: 0;
+
+        @media (min-width: 768px) {
+        display: flex;
+        padding: 30px 50px;
+        text-align: center;
+        }
     }
 
     ul {
@@ -22,10 +34,20 @@ footer {
         font-size: 16px;
         line-height: 1.7;
 
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            line-height: 0;
+            align-items:last baseline;
+            padding-bottom: 20px;
+        }
+
         a {
             text-decoration: none;
             color: white;
             cursor: pointer;
+            font-weight: 300;
 
             .fa-utensils {
                 font-size: 14px;

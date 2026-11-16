@@ -5,9 +5,13 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    background-color: variables.$bg-color;
+    
+   
 
-    .main-container {
-    width: 100%;
-    }
+      .main-container {
+      width: 100%;
+      box-sizing: border-box;
+      align-self: center;
+      background-color: variables.$bg-color;
+      }
 }

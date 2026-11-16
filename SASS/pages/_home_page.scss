@@ -9,47 +9,81 @@
     background-color: variables.$bg-color;
     padding-bottom: 50px;
 
+    @media (min-width: 768px) {
+        padding-bottom: 15px;
+    }
+
     h1 {
         font-size: 24px;
         text-align: center;
         padding: 30px 50px 0 50px;
         margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 40px;            
+        }
     }
 
     p {
         text-align: center;
         font-size: 18px;
         margin-bottom: 30px;
+        font-weight: 300;
     }
 
 }
 
-.fonction-section {
+.section-fonction-bg {
     background-color: white;
+}
+
+.fonction-section {
     padding-bottom: 40px;
+    max-width: 1440px;
+
+    @media (min-width: 768px) {
+    margin: auto;
+    }
 
     h2 {
         font-size: 24px;
         padding: 50px 0 15px 0;
         margin-left: 20px;
-    }
 
-    .menu-card {
-        @include mixins.menu-card;
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        background-color: #F6F6F6;
-    
-        p {
-            padding-left: 10px;
+        @media (min-width: 768px) {
+        padding: 50px 0 0 50px;
         }
     }
+
+
+    .fonction-card {
+
+        @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px;
+        box-sizing: border-box;
+        }
     
-    .card-icon {
-        @include mixins.card-num;  
-    }
+        .menu-card {
+            @include mixins.menu-card;
+            display: flex;
+            align-items: center;
+            background-color: #F6F6F6; 
+
+            p {
+                padding-left: 10px;
+            }
+        }   
+
+        }
+    
+        .card-icon {
+            @include mixins.card-num;  
+        }
 }
+
 
 .restaurant-list {
     display: flex;
@@ -57,16 +91,41 @@
     flex-direction: column;
     background-color: variables.$bg-color;
     padding-bottom: 45px;
+    max-width: 1440px;
 
+    @media (min-width: 768px) {
+        padding: 0 50px;
+        margin: auto;
+    }
+  
     h2 {
     font-size: 24px;
     margin-top: 50px;
     margin-left: 20px;
+
+    @media (min-width: 768px) {
+        padding-left: 50px;
+    }
+    }
+    
+    .restaurant-container {
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 90px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+            margin: 0;
+            padding-bottom: 20px;
+            width: 100%;
+        }
     }
 
     .restaurant-card {
         @include mixins.hp-restaurant-card;
         @include mixins.heart-button;
+        }
 
         .like-button {
             position: absolute;
@@ -90,5 +149,5 @@
         .new-icon {
             @include mixins.nouveau;
         }
-    }
 }
+
