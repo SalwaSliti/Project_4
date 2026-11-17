@@ -131,6 +131,12 @@ body .main-container {
 @media (min-width: 768px) {
   .menu-group {
     margin: auto;
+    width: 75%;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-group {
+    margin: auto;
     width: 55%;
   }
 }
@@ -279,7 +285,7 @@ header .logo {
   top: 1px;
   z-index: 2;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header .logo {
     box-shadow: none;
     z-index: 0;
@@ -303,7 +309,7 @@ header .header-location {
 header .header-location .fa-location-dot {
   padding-right: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   header .header-location {
     box-shadow: none;
   }
@@ -342,6 +348,12 @@ header .header-location .fa-location-dot {
 @media (min-width: 768px) {
   .mp-header img {
     position: absolute;
+    left: 38%;
+  }
+}
+@media (min-width: 1024px) {
+  .mp-header img {
+    position: absolute;
     left: 47%;
   }
 }
@@ -354,7 +366,12 @@ footer {
   background-color: #353535;
   color: white;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1024px) {
   footer {
     flex-direction: row-reverse;
     padding-top: 50px;
@@ -368,7 +385,7 @@ footer h3 {
   padding: 20px 0 0 30px;
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   footer h3 {
     display: flex;
     padding: 30px 50px;
@@ -469,7 +486,7 @@ footer ul a .fa-handshake-angle {
   padding: 30px 50px 0 50px;
   margin: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .intro h1 {
     font-size: 40px;
   }
@@ -504,7 +521,14 @@ footer ul a .fa-handshake-angle {
     padding: 50px 0 0 50px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fonction-section .fonction-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
   .fonction-section .fonction-card {
     display: flex;
     flex-direction: row;
@@ -523,6 +547,11 @@ footer ul a .fa-handshake-angle {
   border-radius: 20px;
 }
 @media (min-width: 768px) {
+  .fonction-section .fonction-card .menu-card {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
   .fonction-section .fonction-card .menu-card {
     width: 30%;
   }
@@ -578,7 +607,7 @@ footer ul a .fa-handshake-angle {
   margin-top: 50px;
   margin-left: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurant-list h2 {
     padding-left: 50px;
   }
@@ -702,6 +731,13 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 768px) {
   .bg-menu img {
+    height: 280px;
+    -o-object-position: 0 70%;
+       object-position: 0 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .bg-menu img {
     height: 500px;
     -o-object-position: 0 60%;
        object-position: 0 60%;
@@ -721,7 +757,7 @@ footer ul a .fa-handshake-angle {
 @media (min-width: 768px) {
   .menu-section {
     max-width: 1440px;
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -43px;
@@ -737,6 +773,7 @@ footer ul a .fa-handshake-angle {
   .menu-section h1 {
     display: flex;
     justify-content: center;
+    padding: 50px 0 30px 0;
   }
 }
 .menu-section .restaurant-name .like-button {
@@ -770,6 +807,13 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 768px) {
   .menu-section .restaurant-name .like-button {
-    right: 420px;
+    right: 125px;
+    top: 57px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-section .restaurant-name .like-button {
+    right: 530px;
+    top: 57px;
   }
 }/*# sourceMappingURL=style.css.map */

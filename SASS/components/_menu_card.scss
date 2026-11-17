@@ -7,6 +7,11 @@
     margin: 15px;
 
     @media (min-width: 768px) {
+        margin: auto;        
+        width: 75%;
+    }
+
+    @media (min-width: 1024px) {
         margin: auto;
         width: 55%;
     }
@@ -33,6 +38,7 @@
         @include mixins.mp-restaurant-card;
         @include mixins.anim-menu-card;
         width: 95%;
+
 
         .menu-price {
 

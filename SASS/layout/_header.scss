@@ -12,7 +12,7 @@ header {
         top: 1px;
         z-index: 2;
         
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             box-shadow: none;
             z-index: 0;
             padding: 25px;
@@ -38,7 +38,7 @@ header {
             padding-right: 5px;
         }
         
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             box-shadow: none;
         }
     }

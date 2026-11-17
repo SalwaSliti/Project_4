@@ -19,7 +19,7 @@
         padding: 30px 50px 0 50px;
         margin: 0;
 
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
             font-size: 40px;            
         }
     }
@@ -58,7 +58,13 @@
 
     .fonction-card {
 
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 1024px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 1024px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -103,9 +109,9 @@
     margin-top: 50px;
     margin-left: 20px;
 
-    @media (min-width: 768px) {
-        padding-left: 50px;
-    }
+        @media (min-width: 1024px) {
+            padding-left: 50px;
+        }
     }
     
     .restaurant-container {
