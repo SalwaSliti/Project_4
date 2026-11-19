@@ -255,7 +255,7 @@ body .main-container {
 }
 .menu-group .menu-card .menu-price .fa-solid {
   position: absolute;
-  bottom: 10px;
+  bottom: 13px;
   right: 10px;
   color: white;
   font-size: 20px;
@@ -643,6 +643,7 @@ footer ul a .fa-handshake-angle {
 .restaurant-list .restaurant-card .like-button {
   cursor: pointer;
   display: block;
+  font-size: 25px;
 }
 @media (min-width: 1024px) {
   .restaurant-list .restaurant-card .like-button:hover {
@@ -782,6 +783,7 @@ footer ul a .fa-handshake-angle {
 .menu-section .restaurant-name .like-button {
   cursor: pointer;
   display: block;
+  font-size: 25px;
 }
 @media (min-width: 1024px) {
   .menu-section .restaurant-name .like-button:hover {
@@ -818,7 +820,7 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 768px) {
   .menu-section .restaurant-name .like-button {
-    right: 125px;
+    right: 160px;
     top: 57px;
   }
 }
@@ -826,6 +828,11 @@ footer ul a .fa-handshake-angle {
   .menu-section .restaurant-name .like-button {
     right: 360px;
     top: 57px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-section .restaurant-name .like-francaise {
+    right: 190px;
   }
 }
 @media (min-width: 1024px) {

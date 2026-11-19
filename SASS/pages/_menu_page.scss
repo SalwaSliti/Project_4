@@ -59,7 +59,7 @@
             font-size: 22px;
 
             @media (min-width: 768px) {
-                right: 125px;
+                right: 160px;
                 top: 57px;
             }
 
@@ -72,6 +72,10 @@
         }
         
         .like-francaise {
+                @media (min-width: 768px) {
+                    right: 190px;
+                }
+
                 @media (min-width: 1024px) {
                     right: 390px;
                 }
