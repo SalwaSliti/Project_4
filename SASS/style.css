@@ -607,13 +607,18 @@ footer ul a .fa-handshake-angle {
   margin-top: 50px;
   margin-left: 20px;
 }
+@media (min-width: 1024px) {
+  .restaurant-list h2 {
+    padding-left: 50px;
+  }
+}
 @media (min-width: 768px) {
   .restaurant-list .restaurant-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    -moz-column-gap: 60px;
-         column-gap: 60px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
     row-gap: 30px;
     flex-wrap: wrap;
     margin: 0;
@@ -634,7 +639,12 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 768px) {
   .restaurant-list .restaurant-card {
-    width: 555px;
+    width: 650px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-list .restaurant-card {
+    width: 590px;
   }
 }
 .restaurant-list .restaurant-card a {
