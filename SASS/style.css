@@ -182,7 +182,7 @@ body .main-container {
 }
 .menu-group .menu-card .menu-card-text .dish-name {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   margin: 0;
   font-weight: 500;
 }
@@ -354,7 +354,7 @@ header .header-location .fa-location-dot {
 @media (min-width: 1024px) {
   .mp-header img {
     position: absolute;
-    left: 47%;
+    left: 43%;
   }
 }
 
@@ -607,18 +607,13 @@ footer ul a .fa-handshake-angle {
   margin-top: 50px;
   margin-left: 20px;
 }
-@media (min-width: 1024px) {
-  .restaurant-list h2 {
-    padding-left: 50px;
-  }
-}
 @media (min-width: 768px) {
   .restaurant-list .restaurant-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    -moz-column-gap: 90px;
-         column-gap: 90px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
     row-gap: 30px;
     flex-wrap: wrap;
     margin: 0;
@@ -639,7 +634,7 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 768px) {
   .restaurant-list .restaurant-card {
-    width: 580px;
+    width: 555px;
   }
 }
 .restaurant-list .restaurant-card a {
@@ -648,6 +643,14 @@ footer ul a .fa-handshake-angle {
 .restaurant-list .restaurant-card .like-button {
   cursor: pointer;
   display: block;
+}
+@media (min-width: 1024px) {
+  .restaurant-list .restaurant-card .like-button:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
 }
 .restaurant-list .restaurant-card .like-button .checked-heart {
   display: none;
@@ -738,7 +741,7 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 1024px) {
   .bg-menu img {
-    height: 500px;
+    height: 400px;
     -o-object-position: 0 60%;
        object-position: 0 60%;
   }
@@ -780,6 +783,14 @@ footer ul a .fa-handshake-angle {
   cursor: pointer;
   display: block;
 }
+@media (min-width: 1024px) {
+  .menu-section .restaurant-name .like-button:hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+  }
+}
 .menu-section .restaurant-name .like-button .checked-heart {
   display: none;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -813,7 +824,12 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 1024px) {
   .menu-section .restaurant-name .like-button {
-    right: 530px;
+    right: 360px;
     top: 57px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-section .restaurant-name .like-francaise {
+    right: 390px;
   }
 }/*# sourceMappingURL=style.css.map */

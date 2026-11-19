@@ -41,7 +41,7 @@
         
         @media (min-width: 1024px) {
             position:absolute;
-            left: 47%;
+            left: 43%;
         }
     }
 }
@@ -118,7 +118,7 @@
     border-radius: 15px;
 
     @media (min-width: 768px) {
-        width: 580px;
+        width: 555px;
     }
 
     a {
@@ -181,13 +181,22 @@
     .like-button {
         cursor: pointer;
         display: block;
-        
+          
+            @media (min-width: 1024px) {
+                    &:hover {
+                        background: variables.$like-button;
+                        background-clip: text;
+                        color: transparent;
+                    }
+            }
 
         .checked-heart {
             display: none;
             background: variables.$like-button;
             background-clip: text;
             color: transparent;
+
+              
             
         }
 
@@ -224,7 +233,7 @@
 
         .dish-name {
             display: block;
-            font-size: 18px;
+            font-size: 17px;
             margin: 0;
             font-weight: 500;
         }

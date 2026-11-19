@@ -16,7 +16,7 @@
         }
 
         @media (min-width: 1024px) {
-            height: 500px;
+            height: 400px;
             object-position: 0 60%;
         }
 
@@ -64,10 +64,18 @@
             }
 
             @media (min-width: 1024px) {
-                right: 530px;
+                right: 360px;
                 top: 57px;
-            }
+
+                
+            }           
         }
+        
+        .like-francaise {
+                @media (min-width: 1024px) {
+                    right: 390px;
+                }
+            }
     }
 }
 
