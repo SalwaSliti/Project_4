@@ -607,6 +607,11 @@ footer ul a .fa-handshake-angle {
   margin-top: 50px;
   margin-left: 20px;
 }
+@media (min-width: 1024px) {
+  .restaurant-list h2 {
+    padding-left: 50px;
+  }
+}
 @media (min-width: 768px) {
   .restaurant-list .restaurant-container {
     display: flex;
