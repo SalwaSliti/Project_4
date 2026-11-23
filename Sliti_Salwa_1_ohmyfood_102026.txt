@@ -1,0 +1,9 @@
+Lien vers le repository GitHub : 
+
+HTTPS : https://github.com/SalwaSliti/Project_4.git
+SSH : git@github.com:SalwaSliti/Project_4.git
+
+
+Lien vers la version en ligne du site : 
+
+https://salwasliti.github.io/Project_4/
