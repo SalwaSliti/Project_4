@@ -321,18 +321,22 @@ header .header-location .fa-location-dot {
 
 .mp-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 85px 10px 20px;
+  position: relative;
+  padding: 10px 20px;
   background-color: #fff;
 }
 @media (min-width: 768px) {
   .mp-header {
-    position: relative;
     padding: 30px;
   }
 }
 .mp-header .back-button {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
   text-decoration: none;
   color: #353535;
   font-size: 18px;
@@ -348,18 +352,6 @@ header .header-location .fa-location-dot {
 .mp-header img {
   max-height: 36px;
   max-width: 197px;
-}
-@media (min-width: 768px) {
-  .mp-header img {
-    position: absolute;
-    left: 38%;
-  }
-}
-@media (min-width: 1024px) {
-  .mp-header img {
-    position: absolute;
-    left: 43%;
-  }
 }
 
 /*Mixins*/

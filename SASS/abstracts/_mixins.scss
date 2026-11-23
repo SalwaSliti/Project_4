@@ -3,17 +3,21 @@
 
 @mixin menu-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 85px 10px 20px;
+    position: relative;
+    padding: 10px 20px;
     background-color: #fff;
 
     @media (min-width: 768px) {
-        position: relative;
         padding: 30px;
     }
 
     .back-button {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         text-decoration: none;
         color: variables.$footer-color;
         font-size: 18px;
@@ -31,16 +35,6 @@
     img {
         max-height: 36px;
         max-width: 197px;
-
-         @media (min-width: 768px) {
-            position:absolute;
-            left: 38%;
-        }
-        
-        @media (min-width: 1024px) {
-            position:absolute;
-            left: 43%;
-        }
     }
 }
 
