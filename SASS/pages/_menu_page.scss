@@ -25,13 +25,13 @@
 
 .menu-section {
     @include mixins.background-menu;
+    margin-bottom: -43px;
 
     @media (min-width: 768px) {
         max-width: 1440px;
         width: 80%;
         margin-left: auto;
-        margin-right: auto;
-        margin-bottom: -43px;
+        margin-right: auto;        
     }
 
     h1 {
@@ -50,36 +50,26 @@
 
     .restaurant-name {        
         @include mixins.heart-button;
-        position: relative;
-        
-        .like-button {            
-            position: absolute;
-            top: 22px;
-            right: 32px;
-            font-size: 22px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 12px;
 
-            @media (min-width: 768px) {
-                right: 160px;
-                top: 57px;
-            }
-
-            @media (min-width: 1024px) {
-                right: 360px;
-                top: 57px;
-
-                
-            }           
+        h1 {
+            margin: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
         
-        .like-francaise {
-                @media (min-width: 768px) {
-                    right: 190px;
-                }
+        .like-button {            
+            flex-shrink: 0;
+            font-size: 22px;
+            padding-left: 15px;
+        }
+    }
 
-                @media (min-width: 1024px) {
-                    right: 390px;
-                }
-            }
+    .btn {
+        margin-bottom: 30px;
     }
 }
 

@@ -23,6 +23,7 @@ body .main-container {
 /*Eléments réutilisables*/
 /*Mixins*/
 .btn-hp {
+  position: relative;
   isolation: isolate;
   cursor: pointer;
   color: white;
@@ -39,6 +40,7 @@ body .main-container {
 .btn-hp::after {
   content: "";
   position: absolute;
+  inset: 0;
   z-index: -1;
   border-radius: inherit;
   opacity: 0;
@@ -57,6 +59,7 @@ body .main-container {
 }
 
 .btn {
+  position: relative;
   isolation: isolate;
   cursor: pointer;
   color: white;
@@ -73,6 +76,7 @@ body .main-container {
 .btn::after {
   content: "";
   position: absolute;
+  inset: 0;
   z-index: -1;
   border-radius: inherit;
   opacity: 0;
@@ -170,6 +174,7 @@ body .main-container {
   border: solid 1px;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  background-color: white;
   padding: 10px;
   margin-bottom: 20px;
   font-size: 16px;
@@ -259,7 +264,6 @@ body .main-container {
   right: 10px;
   color: white;
   font-size: 20px;
-  z-index: 2;
 }
 
 .menu-card-btn {
@@ -504,7 +508,7 @@ footer ul a .fa-handshake-angle {
 
 .fonction-section {
   padding-bottom: 40px;
-  max-width: 1440px;
+  max-width: 1400px;
 }
 @media (min-width: 768px) {
   .fonction-section {
@@ -521,14 +525,14 @@ footer ul a .fa-handshake-angle {
     padding: 50px 0 0 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1080px) {
   .fonction-section .fonction-card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
   .fonction-section .fonction-card {
     display: flex;
     flex-direction: row;
@@ -594,7 +598,7 @@ footer ul a .fa-handshake-angle {
   flex-direction: column;
   background-color: #F3F3F3;
   padding-bottom: 45px;
-  max-width: 1440px;
+  max-width: 1400px;
 }
 @media (min-width: 768px) {
   .restaurant-list {
@@ -605,11 +609,21 @@ footer ul a .fa-handshake-angle {
 .restaurant-list h2 {
   font-size: 24px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 50px;
+}
+@media (min-width: 768px) {
+  .restaurant-list h2 {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 1024px) {
   .restaurant-list h2 {
-    padding-left: 50px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1420px) {
+  .restaurant-list h2 {
+    margin-left: 65px;
   }
 }
 @media (min-width: 768px) {
@@ -644,7 +658,12 @@ footer ul a .fa-handshake-angle {
 }
 @media (min-width: 1024px) {
   .restaurant-list .restaurant-card {
-    width: 545px;
+    width: 550px;
+  }
+}
+@media (min-width: 1420px) {
+  .restaurant-list .restaurant-card {
+    width: 580px;
   }
 }
 .restaurant-list .restaurant-card a {
@@ -714,7 +733,7 @@ footer ul a .fa-handshake-angle {
   .restaurant-list img {
     -o-object-position: 0 70%;
        object-position: 0 70%;
-    height: 251px;
+    height: 230px;
   }
 }
 .restaurant-list .note-enchantee {
@@ -767,6 +786,7 @@ footer ul a .fa-handshake-angle {
   border: solid 1px;
   border: none;
   border-radius: 40px 40px 0 0;
+  margin-bottom: -43px;
 }
 @media (min-width: 768px) {
   .menu-section {
@@ -774,7 +794,6 @@ footer ul a .fa-handshake-angle {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -43px;
   }
 }
 .menu-section h1 {
@@ -820,33 +839,21 @@ footer ul a .fa-handshake-angle {
   display: none;
 }
 .menu-section .restaurant-name {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+}
+.menu-section .restaurant-name h1 {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .menu-section .restaurant-name .like-button {
-  position: absolute;
-  top: 22px;
-  right: 32px;
+  flex-shrink: 0;
   font-size: 22px;
+  padding-left: 15px;
 }
-@media (min-width: 768px) {
-  .menu-section .restaurant-name .like-button {
-    right: 160px;
-    top: 57px;
-  }
-}
-@media (min-width: 1024px) {
-  .menu-section .restaurant-name .like-button {
-    right: 360px;
-    top: 57px;
-  }
-}
-@media (min-width: 768px) {
-  .menu-section .restaurant-name .like-francaise {
-    right: 190px;
-  }
-}
-@media (min-width: 1024px) {
-  .menu-section .restaurant-name .like-francaise {
-    right: 390px;
-  }
+.menu-section .btn {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

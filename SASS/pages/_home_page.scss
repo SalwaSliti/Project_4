@@ -39,7 +39,7 @@
 
 .fonction-section {
     padding-bottom: 40px;
-    max-width: 1440px;
+    max-width: 1400px;
 
     @media (min-width: 768px) {
     margin: auto;
@@ -57,14 +57,15 @@
 
 
     .fonction-card {
+        
 
-        @media (min-width: 768px) and (max-width: 1024px) {
+        @media (min-width: 768px) and (max-width: 1080px) {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: 1080px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -97,7 +98,7 @@
     flex-direction: column;
     background-color: variables.$bg-color;
     padding-bottom: 45px;
-    max-width: 1440px;
+    max-width: 1400px;
 
     @media (min-width: 768px) {
         padding: 0 50px;
@@ -105,15 +106,21 @@
     }
   
     h2 {
-    font-size: 24px;
-    margin-top: 50px;
-    margin-left: 20px;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-left: 50px;
 
-    @media (min-width: 1024px) {
-        padding-left: 50px;
-    }
+        @media (min-width: 768px) {
+            margin-left: 20px;
+        }
 
-       
+        @media (min-width: 1024px) {
+            margin-left: 20px;
+        }
+
+        @media (min-width: 1420px) {
+            margin-left: 65px;
+        }
     }
     
     .restaurant-container {
