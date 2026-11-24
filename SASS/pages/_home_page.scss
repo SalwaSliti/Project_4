@@ -30,7 +30,6 @@
         margin-bottom: 30px;
         font-weight: 300;
     }
-
 }
 
 .section-fonction-bg {
@@ -55,9 +54,7 @@
         }
     }
 
-
-    .fonction-card {
-        
+    .fonction-card {        
 
         @media (min-width: 768px) and (max-width: 1080px) {
             display: flex;
@@ -82,13 +79,12 @@
             p {
                 padding-left: 10px;
             }
-        }   
+        }
+    }
 
-        }
-    
-        .card-icon {
-            @include mixins.card-num;  
-        }
+    .card-icon {
+        @include mixins.card-num;  
+    }
 }
 
 

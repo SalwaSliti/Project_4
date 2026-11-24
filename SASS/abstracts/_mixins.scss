@@ -109,6 +109,10 @@
     font-size: 16px;
     border-radius: 15px;
 
+    a {
+        text-decoration: none;
+    }
+
     @media (min-width: 768px) {
         width: 650px;
     }
@@ -120,13 +124,6 @@
     @media (min-width: 1420px) {
         width: 580px;
     }
-
-
-
-    a {
-        text-decoration: none;
-    }
-
 }
 
 @mixin nouveau
@@ -152,7 +149,6 @@
     @media (min-width: 768px) {
     padding-left: 20px;
     }
-
 
     h3 {
         font-size: 18px;        
@@ -365,9 +361,8 @@
             opacity: 0;           
             background: variables.$btn-color-hover;
             box-shadow: 0px 4px 15px 0px #00000059;
-            transition: opacity 0.6s ease;
-           
-            }
+            transition: opacity 0.6s ease;           
+        }
 
         &:hover {
                 filter: brightness(1.10);
@@ -375,11 +370,5 @@
                 &::after {
                     opacity: 1;
                 }
-            }
-        
-
-
-        
-    
-    
+            }    
 }
