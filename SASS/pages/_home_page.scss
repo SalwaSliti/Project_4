@@ -1,6 +1,6 @@
 @use "../abstracts/mixins";
 @use "../abstracts/variables";
-@use "../components/loader";
+@use "../layout/loader";
 
 .intro {
     display: flex;

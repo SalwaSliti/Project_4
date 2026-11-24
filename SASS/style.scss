@@ -9,11 +9,11 @@
 
 /*Eléments réutilisables*/
 @use 'components/button';
-@use 'components/loader';
 @use 'components/menu_card';
 
 /*Layouts*/
 @use 'layout/header';
+@use 'layout/loader';
 @use 'layout/footer';
 
 /*Pages*/
