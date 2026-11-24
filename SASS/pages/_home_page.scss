@@ -30,7 +30,6 @@
         margin-bottom: 30px;
         font-weight: 300;
     }
-
 }
 
 .section-fonction-bg {
@@ -42,7 +41,7 @@
     max-width: 1400px;
 
     @media (min-width: 768px) {
-    margin: auto;
+        margin: auto;
     }
 
     h2 {
@@ -51,10 +50,9 @@
         margin-left: 20px;
 
         @media (min-width: 768px) {
-        padding: 50px 0 0 50px;
+            padding: 50px 0 0 50px;
         }
     }
-
 
     .fonction-card {
         
@@ -66,11 +64,11 @@
         }
 
         @media (min-width: 1080px) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 50px;
-        box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 50px;
+            box-sizing: border-box;
         }
     
         .menu-card {
@@ -82,13 +80,12 @@
             p {
                 padding-left: 10px;
             }
-        }   
-
         }
+    }
     
-        .card-icon {
-            @include mixins.card-num;  
-        }
+    .card-icon {
+        @include mixins.card-num;  
+    }
 }
 
 
@@ -140,29 +137,29 @@
     .restaurant-card {
         @include mixins.hp-restaurant-card;
         @include mixins.heart-button;
-        }
+    }
 
-        .like-button {
-            position: absolute;
-            bottom: 32px;
-            right: 32px;
-            font-size: 22px;
-        }
+    .like-button {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        font-size: 22px;
+    }
         
-        .restaurant-title {
+    .restaurant-title {
         @include mixins.hp-restaurant-title;
-        }    
+    }    
 
-        img {
-            @include mixins.hp-restaurant-img;          
-        }  
+    img {
+        @include mixins.hp-restaurant-img;          
+    }  
 
-        .note-enchantee {
-                object-position: 0 60%;
-            }
+    .note-enchantee {
+        object-position: 0 60%;
+    }
 
-        .new-icon {
-            @include mixins.nouveau;
-        }
+    .new-icon {
+        @include mixins.nouveau;
+    }
 }
 

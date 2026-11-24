@@ -43,24 +43,23 @@
         .menu-price {
 
             .fa-solid {
-            position: absolute;
-            bottom: 13px;
-            right: 10px;
-            color: white;
-            font-size: 20px;
+                position: absolute;
+                bottom: 13px;
+                right: 10px;
+                color: white;
+                font-size: 20px;
             }
         }
     }
 }
 
- .menu-card-btn {
-        position: relative;
-        z-index: 1;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        align-items: flex-end;
-        text-align: left;        
-      
-    }
+.menu-card-btn {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: left;      
+}

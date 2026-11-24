@@ -1,4 +1,5 @@
-/*Mixins*/
+/*Outils*/
+@use 'abstracts/keyframes';
 @use 'abstracts/mixins';
 @use 'abstracts/variables';
 
@@ -8,6 +9,7 @@
 
 /*Eléments réutilisables*/
 @use 'components/button';
+@use 'components/loader';
 @use 'components/menu_card';
 
 /*Layouts*/
