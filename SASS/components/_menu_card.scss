@@ -21,11 +21,17 @@
     }
 
     .menu-animation-2 {
-        animation: anim-menu-group 2000ms;
+        opacity: 0;
+        animation: anim-menu-group 1000ms;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
     }
 
     .menu-animation-3 {
-        animation: anim-menu-group 3000ms;
+        opacity: 0;
+        animation: anim-menu-group 1000ms;
+        animation-delay: 0.8s;
+        animation-fill-mode: forwards;
         margin-bottom: 50px;
         
     }

@@ -147,10 +147,16 @@ body .main-container {
   animation: anim-menu-group 1000ms;
 }
 .menu-group .menu-animation-2 {
-  animation: anim-menu-group 2000ms;
+  opacity: 0;
+  animation: anim-menu-group 1000ms;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
 }
 .menu-group .menu-animation-3 {
-  animation: anim-menu-group 3000ms;
+  opacity: 0;
+  animation: anim-menu-group 1000ms;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
   margin-bottom: 50px;
 }
 .menu-group h2 {
