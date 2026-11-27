@@ -260,6 +260,17 @@ body .main-container {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media (min-width: 1024px) {
+  .menu-group .menu-card:hover::after {
+    transform: translateX(0);
+  }
+  .menu-group .menu-card:hover .menu-price .fa-solid {
+    transform: translateX(0);
+  }
+  .menu-group .menu-card:hover .menu-price .price {
+    transform: translateX(-60px);
+  }
+}
 .menu-group .menu-card {
   width: 95%;
 }
@@ -368,7 +379,7 @@ header .header-location .fa-location-dot {
   justify-content: center;
   align-items: center;
   background-color: white;
-  animation: loader-opacity 1s linear;
+  animation: loader-opacity linear;
   animation-duration: 0.4s;
   animation-delay: 1.8s;
   animation-fill-mode: forwards;
@@ -407,11 +418,6 @@ footer {
   flex-direction: column;
   background-color: #353535;
   color: white;
-}
-@media (min-width: 1024px) {
-  footer {
-    flex-direction: row-reverse;
-  }
 }
 @media (min-width: 1024px) {
   footer {

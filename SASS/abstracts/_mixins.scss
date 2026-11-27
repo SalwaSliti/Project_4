@@ -193,7 +193,7 @@
             display: none;
             background: variables.$like-button;
             background-clip: text;
-            color: transparent;            
+            color: transparent;
         }
 
         input:checked ~ .checked-heart {
@@ -275,10 +275,10 @@
 }
  
 @mixin anim-menu-card {
-    /*apparition icône au clic d'un plat*/        
+/*apparition icône au clic d'un plat*/        
     position: relative;
     overflow: hidden;        
-
+    
     &::after {
         content: "";
         position: absolute;
@@ -308,7 +308,7 @@
         display: none;
     }
 
-    &:has(.menu-checkbox:checked) {
+    &:has(.menu-checkbox:checked) {        
         &::after {
             transform: translateX(0);
         }
@@ -332,6 +332,22 @@
                 white-space: nowrap;
             }
         }       
+    }
+        
+    @media (min-width: 1024px) {
+        &:hover {
+            &::after {
+                transform: translateX(0);
+            }
+
+            .menu-price .fa-solid {
+                transform: translateX(0);
+            }
+
+            .menu-price .price {
+                transform: translateX(-60px);
+            }
+        }
     }
 }
     
